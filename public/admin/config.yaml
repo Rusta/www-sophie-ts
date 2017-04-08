@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: https://github.com/Rusta/www-sophie-ts.git
+  repo: Rusta/www-sophie-ts.git
   branch: master
 
 collections:
