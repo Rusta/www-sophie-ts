@@ -1,7 +1,7 @@
 ---
-title: About Us
 description: About Sophie T's
-keywords: about, tea shop, opening times, Lynne Terrell, Mrs T
+keywords: 'about, tea shop, opening times, Lynne Terrell, Mrs T'
+title: About Us TEST CHANGE
 ---
 
 Sophie T’s is a small family-run teashop. Lynne Terrell (alias Mrs T) and her fantastic team, Emma, Rebecca, Lesley, Claire, Emily and Lauren will give you a warm welcome Tuesday to Saturday 9.00am – 4.30pm.
