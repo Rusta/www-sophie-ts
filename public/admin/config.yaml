@@ -2,3 +2,13 @@ backend:
   name: github
   repo: Rusta/www-sophie-ts
   branch: master
+
+collections:
+  - name: "pages"
+    label: "Pages"
+    files:
+      - file: "pages/about.md"
+        label: "About Page"
+        name: "about"
+        fields:
+          - {label: Title, name: title, widget: string}
