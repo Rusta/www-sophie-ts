@@ -3,6 +3,8 @@ backend:
   repo: Rusta/www-sophie-ts
   branch: master
 
+media_folder: "public/img"
+
 collections:
   - name: "pages"
     label: "Pages"
