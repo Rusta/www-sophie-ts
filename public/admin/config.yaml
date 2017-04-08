@@ -5,7 +5,7 @@ backend:
 
 media_folder: "public/img"
 
-collections: # A list of collections the CMS should be able to edit
+collections:
   - name: "pages"
     label: "Pages"
     files:
@@ -13,4 +13,4 @@ collections: # A list of collections the CMS should be able to edit
         label: "About Page"
         name: "about"
         fields:
-          - {label: "Body", name: "body", widget: "markdown"}
+          - {label: Title, name: title, widget: string}
