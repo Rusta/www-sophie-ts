@@ -1,0 +1,16 @@
+backend:
+  name: github
+  repo: Rusta/www-sophie-ts
+  branch: master
+
+media_folder: "public/img"
+
+collections: # A list of collections the CMS should be able to edit
+  - name: "pages"
+    label: "Pages"
+    files:
+      - file: "pages/about.md"
+        label: "About Page"
+        name: "about"
+        fields:
+          - {label: "Body", name: "body", widget: "markdown"}
