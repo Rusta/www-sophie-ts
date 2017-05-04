@@ -1,7 +1,7 @@
 ---
 title: Remembrance
 date: "2015-11-07T10:00:00.000Z"
-description: They shall not grow old…
+description: They shall not grow old...
 keywords: Remembrance
 image: /IMG_0136.jpg
 ---
