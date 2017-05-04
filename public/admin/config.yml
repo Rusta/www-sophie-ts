@@ -24,3 +24,4 @@ collections:
       - {label: "Date", name: "date", widget: "datetime"}
       - {label: "Description", name: "description", widget: "text"}
       - {label: "Body", name: "body", widget: "markdown"}
+      - {label: "Image", name: "image", widget: "image"}
