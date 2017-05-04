@@ -1,8 +1,9 @@
 ---
 title: Mothers Day Weekend
-date: "2017-14-02T10:00:00.000Z"
+date: '2017-14-02T10:00:00.000Z'
 description: Mothers Day Weekend – Saturday 25th / Sunday 26th March
-keywords:
+image: /IMG_0005.JPG
+keywords: null
 ---
 
 Sophie T’s is pleased to announce we will be open once again for Mothers Day Weekend!
@@ -34,3 +35,4 @@ Please note, no Facebook bookings for this event, gift vouchers not valid for th
 
 Hope to see you soon
 Mrs T!
+
