@@ -16,7 +16,7 @@ collections:
         fields:
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Body", name: "body", widget: "markdown"}
-      - file: "pages/blog"
+      - folder: "pages/blog"
         label: "Blog"
         name: "blog"
         fields:
