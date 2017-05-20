@@ -13,7 +13,6 @@ const MarkdDownWrapper = ({ route }) => {
     { name: 'description', content: description },
     { name: 'keywords', content: keywords },
   ]
-
   return (
     <div className="markdown-page">
       <Helmet
