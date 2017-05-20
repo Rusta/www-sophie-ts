@@ -3,10 +3,9 @@ description: About Sophie T's
 keywords: 'about, tea shop, opening times, Lynne Terrell, Mrs T'
 title: About Us
 ---
-
 Sophie T’s is a small family-run teashop. Lynne Terrell (alias Mrs T) and her fantastic team, Emma, Rebecca, Lesley, Claire, Emily and Lauren will give you a warm welcome Tuesday to Saturday 9.00am – 4.30pm.
 
-Mrs T and Emma bake cakes and scones every morning from Mrs T’s mums recipes ( no packet mixes here!) and all food orders are freshly made at the time of ordering.
+Mrs T and Emma bake cakes and scones every morning from Mrs T’s mums recipes (no packet mixes here!) and all food orders are freshly made at the time of ordering.
 
 Sophie T’s is named after our daughter Sophie who died aged 6 from Neuroblastoma, a childhood cancer.
 
