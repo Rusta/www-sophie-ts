@@ -37,6 +37,7 @@ collections:
   - name: "blog"
     folder: "pages/blog"
     label: "Blog"
+    create: true
     fields:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Date", name: "date", widget: "datetime"}
