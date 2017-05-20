@@ -22,7 +22,19 @@ collections:
         fields:
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Body", name: "body", widget: "markdown"}
-  - name: "blob"
+      - file: "pages/gallery.md"
+        label: "Gallery"
+        name: "gallery"
+        fields:
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Body", name: "body", widget: "markdown"}
+      - file: "pages/404.md"
+        label: "404 - Not found"
+        name: "404"
+        fields:
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Body", name: "body", widget: "markdown"}
+  - name: "blog"
     folder: "pages/blog"
     label: "Blog"
     fields:
@@ -31,3 +43,10 @@ collections:
       - {label: "Description", name: "description", widget: "text"}
       - {label: "Image", name: "image", widget: "image"}
       - {label: "Body", name: "body", widget: "markdown"}
+  - name: "menu"
+    folder: "pages/menu"
+    label: "Menu"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Description", name: "description", widget: "text"}
+      - {label: "Image", name: "image", widget: "image"}
