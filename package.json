@@ -4,9 +4,9 @@
   "description": "Sophie T's Website",
   "main": "index.js",
   "scripts": {
-    "custom-build": "gatsby build",
-    "build": "gatsby build",
-    "develop": "gatsby develop",
+    "copy-images": "node ./scripts/copyImages",
+    "build": "npm run copy-images && gatsby build",
+    "develop": "npm run copy-images && gatsby develop",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -34,6 +34,7 @@
     "eslint-config-airbnb": "^14.1.0",
     "eslint-plugin-import": "^2.2.0",
     "eslint-plugin-jsx-a11y": "^4.0.0",
-    "eslint-plugin-react": "^6.10.0"
+    "eslint-plugin-react": "^6.10.0",
+    "fs-extra": "^3.0.1"
   }
 }
