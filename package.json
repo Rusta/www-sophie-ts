@@ -7,6 +7,7 @@
     "copy-images": "node ./scripts/copyImages",
     "build": "npm run copy-images && gatsby build",
     "develop": "npm run copy-images && gatsby develop",
+    "start": "npm run develop",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
