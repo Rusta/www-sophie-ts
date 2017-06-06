@@ -10,8 +10,14 @@ collections:
     label: "Pages"
     files:
       - file: "pages/about.md"
-        label: "About Page"
+        label: "About"
         name: "about"
+        fields:
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Body", name: "body", widget: "markdown"}
+      - file: "pages/menu.md"
+        label: "Menu"
+        name: "menu"
         fields:
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Body", name: "body", widget: "markdown"}
@@ -43,10 +49,3 @@ collections:
       - {label: "Description", name: "description", widget: "text"}
       - {label: "Image", name: "image", widget: "image"}
       - {label: "Body", name: "body", widget: "markdown"}
-  - name: "menu"
-    folder: "pages/menu"
-    label: "Menu"
-    fields:
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Description", name: "description", widget: "text"}
-      - {label: "Image", name: "image", widget: "image"}
