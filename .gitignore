@@ -28,5 +28,6 @@ node_modules
 .gatsby-context.js
 .sass-cache/
 
-# Not all content is mastered in public/
+# images are mastered in /img, and copied over as required during the build
+pages/img
 public/img
