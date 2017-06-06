@@ -7,7 +7,7 @@ const Template = ({ children }) => {
       && children.props.route.page
       && children.props.route.page.data
       && children.props.route.page.data.image) {
-    const imgSource = `../../img${children.props.route.page.data.image}`;
+    const imgSource = `${children.props.route.page.data.image}`;
     img = <img alt="Blog" src={imgSource} />
   }
   return (
