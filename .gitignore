@@ -28,6 +28,8 @@ node_modules
 .gatsby-context.js
 .sass-cache/
 
+# public is entirely rebuilt from pages/
+public
+
 # images are mastered in /img, and copied over as required during the build
 pages/img
-public/img
