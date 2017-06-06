@@ -20,7 +20,3 @@ Sophie T’s is named after our daughter Sophie who died aged 6 from Neuroblasto
 | **Friday**      | 09:00 – 16:30  |
 | **Saturday**    | 09:00 – 16:30  |
 | **Sunday**      | Closed         |
-
-
-![test](/img/IMG_1494.JPG)
-
