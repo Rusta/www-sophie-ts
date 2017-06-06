@@ -30,4 +30,5 @@ node_modules
 
 # images are mastered in /img, and copied over as required during the build
 pages/img
-public/img
+
+public
