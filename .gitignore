@@ -27,3 +27,6 @@ build/Release
 node_modules
 .gatsby-context.js
 .sass-cache/
+
+# Not all content is mastered in public/
+public/img
