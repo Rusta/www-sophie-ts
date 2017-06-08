@@ -9,9 +9,9 @@ const Template = ({ location, children }) => {
   return (
     <div>
       <SiteHeader activePath={activePath} />
-      <div>
+      <main>
         {children}
-      </div>
+      </main>
     </div>
   )
 }
