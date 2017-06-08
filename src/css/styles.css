@@ -71,6 +71,11 @@ nav a.active {
 
 
 /* Blog Posts */
+.blog--image {
+  float: right;
+  margin: 0 0 25px;
+  max-width: 35%;
+}
 .entry {
   word-wrap: break-word;
   margin-top: 15px;
