@@ -110,6 +110,11 @@ nav a.active {
   float: right;
 }
 
+.back-link {
+  line-height: 50px;
+  float: right;
+}
+
 /* Contact details */
 .contact-address,
 .contact-telephone,
