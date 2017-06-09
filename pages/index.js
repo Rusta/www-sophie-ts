@@ -18,8 +18,10 @@ const renderBlogLink = page =>
   </li>
 
 const renderBlogList = (blogList) => {
+  // only show markdown files (i.e. not the index page)
+  const blogPosts = blogList.filter(blog => (blog.file.ext === 'md'));
   // recent blogs (show the full blog)
-  const recentBlogPostList = blogList.slice(0, config.numberOfBlogsToDisplay)
+  const recentBlogPostList = blogPosts.slice(0, config.numberOfBlogsToDisplay)
   const recentBlogPosts = recentBlogPostList.map(page => Blog(page))
   // older blogs (show link to blog)
   const olderBlogPostList = blogList.slice(config.numberOfBlogsToDisplay)

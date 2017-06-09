@@ -6,7 +6,9 @@ import cupsImage from './cups.jpg'
 import PageLink from '../common/PageLink'
 
 const activeClass = (path, activePath) =>
-  classNames({ active: path === activePath })
+  classNames({
+    active: path === activePath || (path === '/blog/' && activePath.indexOf('/blog/') > -1)
+  })
 
 const SiteHeader = ({ activePath }) =>
   <header>
@@ -14,6 +16,9 @@ const SiteHeader = ({ activePath }) =>
     <nav>
       <PageLink className={activeClass('/', activePath)} to={'/'}>
         Home
+      </PageLink>
+      <PageLink className={activeClass('/blog/', activePath)} to={'/blog/'}>
+        Blog
       </PageLink>
       <PageLink className={activeClass('/about/', activePath)} to={'/about/'}>
         About Us
