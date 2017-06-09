@@ -30,6 +30,7 @@ const renderBlogList = (blogList) => {
         {recentBlogPosts}
       </div>
       <div>
+        <h4> Older posts... </h4>
         <ul>
           {olderBlogPosts}
         </ul>
