@@ -76,7 +76,7 @@ nav a.active {
 
 
 /* Blog Posts */
-.blog--image {
+.entry-image {
   float: right;
   margin: 0 0 25px;
   max-width: 35%;
