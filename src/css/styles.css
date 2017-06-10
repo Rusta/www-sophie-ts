@@ -127,3 +127,25 @@ nav a.active {
 .contact-map {
   margin: 10px 0px;
 }
+
+/* Gallery */
+.gallery-images {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: space-around;
+}
+.gallery-item {
+  flex-basis: 25%;
+}
+.gallery-item-title {
+  margin-bottom: 10px;
+}
+.gallery-item-image {
+  height: 160px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  cursor: pointer;
+}
