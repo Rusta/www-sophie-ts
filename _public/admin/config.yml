@@ -80,7 +80,7 @@ collections:
       - label: "Images"
         name: "images"
         widget: "list"
-          - fields:
-            - label: "Image Title"
-              name: "imageTitle"
-              widget: "string"
+        fields:
+          - label: "Image Title"
+            name: "imageTitle"
+            widget: "string"
