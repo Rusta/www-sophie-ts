@@ -13,7 +13,7 @@ const Template = ({ children }) => {
     return (
       <div>
         <Link className="back-link" to={prefixLink('/gallery/')}> Back </Link>
-        {Gallery(children.props.route.page)}
+        <Gallery {...children.props.route.page} />
       </div>
     )
   }
