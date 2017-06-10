@@ -27,12 +27,6 @@ collections:
         fields:
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Body", name: "body", widget: "markdown"}
-      - file: "pages/gallery.md"
-        label: "Gallery"
-        name: "gallery"
-        fields:
-          - {label: "Title", name: "title", widget: "string"}
-          - {label: "Body", name: "body", widget: "markdown"}
       - file: "pages/404.md"
         label: "404 - Not found"
         name: "404"
@@ -49,3 +43,15 @@ collections:
       - {label: "Description", name: "description", widget: "text"}
       - {label: "Image", name: "image", widget: "image"}
       - {label: "Body", name: "body", widget: "markdown"}
+  - name: "gallery"
+    folder: "pages/gallery"
+    label: "Gallery"
+    create: true
+    fields:
+      - label: "Images"
+        name: "images"
+        widget: "list"
+        fields:
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Image", name: "image", widget: "image"}
+          - {label: "Description", name: "description", widget: "string"}
