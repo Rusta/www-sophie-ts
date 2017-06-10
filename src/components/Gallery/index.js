@@ -50,6 +50,7 @@ class Gallery extends Component {
           })}
         </div>
         {/* Todo: full page image preview */}
+        {/* Todo: handle next and previous buttons to shift index */}
         {inViewImage && (
           <div className="gallery-view-image">
             <h5>{inViewImage.imageTitle}</h5>
