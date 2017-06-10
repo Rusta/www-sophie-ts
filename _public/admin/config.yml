@@ -48,6 +48,9 @@ collections:
     label: "Gallery"
     create: true
     fields:
+      - label: "Main Title"
+        name: "mainTitle"
+        widget: "string"
       - label: "Images"
         name: "images"
         widget: "list"
