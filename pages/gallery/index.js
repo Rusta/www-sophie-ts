@@ -5,7 +5,8 @@ import Helmet from 'react-helmet';
 import { prefixLink } from 'gatsby-helpers';
 import { config } from 'config';
 
-const renderGalleryLink = page =>
+// TODO: make these look beautiful (and move this to the component folder)
+const renderGalleryItem = page =>
   <li key={page.path}>
     <Link to={prefixLink(page.path)}>
       {page.data.title}
@@ -26,8 +27,8 @@ const GalleryPage = ({ route }) => {
           { name: 'keywords', content: "Sophie T's, homepage, tea shop, blog, articles" },
         ]}
       />
-    <h1>Gallery</h1>
-      {galleryEntries.map(page => renderGalleryLink(page))}
+      <h1>Gallery</h1>
+      {galleryEntries.map(page => renderGalleryItem(page))}
     </div>
   );
 };
