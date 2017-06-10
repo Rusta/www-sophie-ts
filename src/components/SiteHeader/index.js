@@ -7,7 +7,7 @@ import PageLink from '../common/PageLink'
 
 const activeClass = (path, activePath) =>
   classNames({
-    active: path === activePath || (path === '/blog/' && activePath.indexOf('/blog/') > -1)
+    active: (path === '/' && activePath === '/') || (path !== '/' && activePath.indexOf(`${path}`) > -1)
   })
 
 const SiteHeader = ({ activePath }) =>
