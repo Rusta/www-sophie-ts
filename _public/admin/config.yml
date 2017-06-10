@@ -56,5 +56,4 @@ collections:
         widget: "list"
         fields:
           - {label: "Title", name: "title", widget: "string"}
-          - {label: "Image", name: "image", widget: "image", media_folder: "img"}
           - {label: "Description", name: "description", widget: "string"}

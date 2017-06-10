@@ -26,7 +26,7 @@ const GalleryPage = ({ route }) => {
           { name: 'keywords', content: "Sophie T's, homepage, tea shop, blog, articles" },
         ]}
       />
-      <h1>Blog</h1>
+    <h1>Gallery</h1>
       {galleryEntries.map(page => renderGalleryLink(page))}
     </div>
   );
