@@ -70,10 +70,10 @@ collections:
         name: "body"
         widget: "markdown"
   - name: "gallery"
-    folder: "pages/gallery"
+    folder: "pages/gllery"
     label: "Gallery"
     create: true
     fields:
-      - label: "Entry Title"
-        name: "entryTitle"
+      - label: "Title"
+        name: "title"
         widget: "string"
