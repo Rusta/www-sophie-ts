@@ -77,3 +77,10 @@ collections:
       - label: "Title"
         name: "title"
         widget: "string"
+      - label: "Images"
+        name: "images"
+        widget: "list"
+          - fields:
+            - label: "Image Title"
+              name: "imageTitle"
+              widget: "string"
