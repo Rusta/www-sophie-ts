@@ -33,9 +33,6 @@ const GalleryPage = ({ route }) => {
       <h1>Gallery</h1>
       <div className="gallery-list">
         {galleryEntries.map(page => renderGalleryItem(page))}
-        {galleryEntries.map(page => renderGalleryItem(page))}
-        {galleryEntries.map(page => renderGalleryItem(page))}
-        {galleryEntries.map(page => renderGalleryItem(page))}
       </div>
     </div>
   );
