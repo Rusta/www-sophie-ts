@@ -24,7 +24,7 @@ const renderBlogList = (blogList) => {
   const recentBlogPostList = blogPosts.slice(0, config.numberOfBlogsToDisplay)
   const recentBlogPosts = recentBlogPostList.map(page => Blog(page))
   // older blogs (show link to blog)
-  const olderBlogPostList = blogList.slice(config.numberOfBlogsToDisplay)
+  const olderBlogPostList = blogPosts.slice(config.numberOfBlogsToDisplay)
   const olderBlogPosts = olderBlogPostList.map(page => renderBlogLink(page))
   return (
     <div>
