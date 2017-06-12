@@ -55,9 +55,9 @@ class Gallery extends Component {
             mainSrc={inViewImage.image}
             imageTitle={inViewImage.imageTitle}
             imageCaption={inViewImage.imageDescr}
-            nextSrc={data.images[(inViewImageIndex + 1) % data.images.length]}
+            nextSrc={data.images[(inViewImageIndex + 1) % data.images.length].image}
             prevSrc={
-              data.images[(inViewImageIndex + (data.images.length - 1)) % data.images.length]
+              data.images[(inViewImageIndex + (data.images.length - 1)) % data.images.length].image
             }
             onCloseRequest={() => this.setState({ inViewImageIndex: null })}
             onMovePrevRequest={() => this.setState({
