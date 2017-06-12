@@ -5,11 +5,14 @@ import Helmet from 'react-helmet';
 import { prefixLink } from 'gatsby-helpers';
 import { config } from 'config';
 
+const numImages = number =>
+  `${number} ${(number === 1 ? 'image' : 'images')}`
+
 // TODO: make these look beautiful (and move this to the component folder)
 const renderGalleryItem = page =>
   <li key={page.path}>
     <Link to={prefixLink(page.path)}>
-      {page.data.title}
+      {page.data.title} ({numImages(page.data.images.length)})
     </Link>
   </li>;
 
