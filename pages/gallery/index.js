@@ -10,11 +10,11 @@ const numImages = number =>
 
 // TODO: make these look beautiful (and move this to the component folder)
 const renderGalleryItem = page =>
-  <li key={page.path}>
-    <Link to={prefixLink(page.path)}>
-      {page.data.title} ({numImages(page.data.images.length)})
-    </Link>
-  </li>;
+  <Link key={page.path} className="gallery-list-item" to={prefixLink(page.path)}>
+    {page.data.title}
+    <br />
+    <small>{numImages(page.data.images.length)}</small>
+  </Link>;
 
 const GalleryPage = ({ route }) => {
   // filter to get just the gallery entries
@@ -31,7 +31,12 @@ const GalleryPage = ({ route }) => {
         ]}
       />
       <h1>Gallery</h1>
-      {galleryEntries.map(page => renderGalleryItem(page))}
+      <div className="gallery-list">
+        {galleryEntries.map(page => renderGalleryItem(page))}
+        {galleryEntries.map(page => renderGalleryItem(page))}
+        {galleryEntries.map(page => renderGalleryItem(page))}
+        {galleryEntries.map(page => renderGalleryItem(page))}
+      </div>
     </div>
   );
 };
