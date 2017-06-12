@@ -1,7 +1,5 @@
 import React from 'react'
-import { Link } from 'react-router'
 import moment from 'moment'
-import { prefixLink } from 'gatsby-helpers'
 
 const dateFormat = 'YYYY-DD-MMTHH:mm:00.000Z'
 
@@ -12,9 +10,7 @@ const Blog = (page) => {
 
   return (
     <div key={page.path} className="entry">
-      <Link to={prefixLink(page.path)}>
-        <h2 className="entry-title">{page.data.title}</h2>
-      </Link>
+      <h2 className="entry-title">{page.data.title}</h2>
       <div className="entry-meta">
         <span className="entry-date">{dateFriendly}</span>
         <span className="entry-ago">{daysAgo}</span>
