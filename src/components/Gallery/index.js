@@ -1,4 +1,5 @@
 import React, { Component, PropTypes } from 'react'
+import Lightbox from 'react-image-lightbox'
 
 const GalleryImage = img =>
   <div className="gallery-item">
@@ -49,15 +50,24 @@ class Gallery extends Component {
             )
           })}
         </div>
-        {/* Todo: full page image preview */}
-        {/* Todo: handle next and previous buttons to shift index */}
-        {inViewImage && (
-          <div className="gallery-view-image">
-            <h5>{inViewImage.imageTitle}</h5>
-            <p>{inViewImage.imageDescr}</p>
-            <img src={inViewImage.image} alt={inViewImage.imageTitle} />
-          </div>
-        )}
+        {inViewImage &&
+          <Lightbox
+            mainSrc={inViewImage.image}
+            imageTitle={inViewImage.imageTitle}
+            imageCaption={inViewImage.imageDescr}
+            nextSrc={data.images[(inViewImageIndex + 1) % data.images.length]}
+            prevSrc={
+              data.images[(inViewImageIndex + (data.images.length - 1)) % data.images.length]
+            }
+            onCloseRequest={() => this.setState({ inViewImageIndex: null })}
+            onMovePrevRequest={() => this.setState({
+              inViewImageIndex: (inViewImageIndex + (data.images.length - 1)) % data.images.length,
+            })}
+            onMoveNextRequest={() => this.setState({
+              inViewImageIndex: (inViewImageIndex + 1) % data.images.length,
+            })}
+          />
+      }
       </div>
     )
   }
