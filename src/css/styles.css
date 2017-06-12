@@ -86,6 +86,10 @@ nav a.active {
   margin-top: 15px;
   margin-bottom: 45px;
 }
+.entry-body {
+  border-top: 2px solid #ddd;
+  padding-top: 25px;
+}
 .entry-title {
   padding-bottom: 10px;
   padding-right: 10px;
@@ -95,11 +99,9 @@ nav a.active {
   line-height: 50px;
 }
 .entry-meta {
-  border-bottom: 2px solid #ddd;
   font-size: 0.7em;
   line-height: 24px;
   padding: 0 0 8px;
-  margin-bottom: 15px;
   text-transform: uppercase;
 }
 .entry-content {
