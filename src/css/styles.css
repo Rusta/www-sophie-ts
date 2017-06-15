@@ -3,6 +3,7 @@ body {
   font-size: 16px;
   max-width: 770px;
   margin: 0 auto;
+  padding-bottom: 40px;
 }
 
 main {
@@ -34,12 +35,24 @@ header {
 }
 
 footer {
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
   text-align: center;
-  height: 30px;
-  line-height: 30px;
+  height: 40px;
+  line-height: 40px;
   background-color: #000;
   color: #fff;
   width: 100%;
+}
+footer a {
+  color: #fff;
+  margin: 0px 10px;
+  text-decoration: none;
+  cursor: pointer;
+}
+footer a:hover {
+  text-decoration: underline;
 }
 
 header nav {

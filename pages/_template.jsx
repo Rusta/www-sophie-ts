@@ -3,6 +3,7 @@ import React, { PropTypes } from 'react'
 import '../src/css/styles.css'
 
 import SiteHeader from '../src/components/SiteHeader'
+import SiteFooter from '../src/components/SiteFooter'
 
 const Template = ({ location, children }) => {
   const activePath = location.pathname
@@ -12,6 +13,7 @@ const Template = ({ location, children }) => {
       <main>
         {children}
       </main>
+      <SiteFooter />
     </div>
   )
 }
