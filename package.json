@@ -4,7 +4,8 @@
   "description": "Sophie T's Website",
   "main": "index.js",
   "scripts": {
-    "copy-images": "node ./scripts/copyImages",
+    "copy-images-develop": "node ./scripts/copyImagesToPages",
+    "copy-images-build": "node ./scripts/copyImagesToPublic",
     "clean": "node ./scripts/cleanPublicDirectory",
     "build": "npm run clean && npm run copy-images && gatsby build",
     "develop": "npm run copy-images && gatsby develop",
