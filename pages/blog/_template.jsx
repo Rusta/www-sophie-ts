@@ -1,7 +1,6 @@
 import React, { PropTypes } from 'react'
-import { Link } from 'react-router'
-import { prefixLink } from 'gatsby-helpers'
 import Blog from '../../src/components/Blog'
+import BlogCrumb from '../../src/components/BlogCrumb'
 
 const Template = ({ children }) => {
   if (children && children.props && children.props.route && children.props.route.page) {
@@ -12,7 +11,7 @@ const Template = ({ children }) => {
     // otherwise return a blog post
     return (
       <div>
-        <Link className="back-link" to={prefixLink('/')}> Back </Link>
+        {BlogCrumb({ page: children.props.route.page, pages: children.props.route.pages })}
         {Blog(children.props.route.page)}
       </div>
     )

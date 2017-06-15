@@ -1,0 +1,16 @@
+.blog-crumb {
+  position: relative;
+  height: 1px;
+}
+
+.crumb-path {
+  float: left;
+}
+
+.crumb-links {
+  float: right;
+}
+
+.crumb-links a {
+  padding-left: 10px;
+}
