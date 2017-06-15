@@ -3,12 +3,18 @@ body {
   font-size: 16px;
   max-width: 770px;
   margin: 0 auto;
-  padding-bottom: 40px;
+}
+
+.Wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 main {
   padding: 10px 0px;
   margin-bottom: 30px;
+  flex: 1 0 auto;
 }
 
 body, input, textarea {
@@ -35,9 +41,6 @@ header {
 }
 
 footer {
-  position: fixed;
-  bottom: 0px;
-  left: 0px;
   text-align: center;
   height: 40px;
   line-height: 40px;

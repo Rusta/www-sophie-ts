@@ -8,7 +8,7 @@ import SiteFooter from '../src/components/SiteFooter'
 const Template = ({ location, children }) => {
   const activePath = location.pathname
   return (
-    <div>
+    <div className="Wrapper">
       <SiteHeader activePath={activePath} />
       <main>
         {children}
