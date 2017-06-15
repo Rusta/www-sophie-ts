@@ -7,8 +7,8 @@
     "copy-images-develop": "node ./scripts/copyImagesToPages",
     "copy-images-build": "node ./scripts/copyImagesToPublic",
     "clean": "node ./scripts/cleanPublicDirectory",
-    "build": "npm run clean && npm run copy-images && gatsby build",
-    "develop": "npm run copy-images && gatsby develop",
+    "build": "npm run clean && npm run copy-images-build && gatsby build",
+    "develop": "npm run copy-images-develop && gatsby develop",
     "start": "npm run develop",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
