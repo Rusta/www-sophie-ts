@@ -10,10 +10,14 @@ const numImages = number =>
 
 // TODO: make these look beautiful (and move this to the component folder)
 const renderGalleryItem = page =>
-  <Link key={page.path} className="gallery-list-item" to={prefixLink(page.path)}>
-    {page.data.title}
-    <br />
-    <small>{numImages(page.data.images.length)}</small>
+  <Link
+    key={page.path}
+    className="gallery-list-item"
+    to={prefixLink(page.path)}
+    style={{ backgroundImage: `url(${page.data.images[0].image})` }}
+  >
+    <span className="gallery-list-item-title">{page.data.title}</span>
+    <small className="gallery-list-item-meta">{numImages(page.data.images.length)}</small>
   </Link>;
 
 const GalleryPage = ({ route }) => {
@@ -26,8 +30,8 @@ const GalleryPage = ({ route }) => {
       <Helmet
         title={config.siteTitle}
         meta={[
-          { name: 'description', content: "Sophie T's Blog" },
-          { name: 'keywords', content: "Sophie T's, homepage, tea shop, blog, articles" },
+          { name: 'description', content: 'Sophie T\'s Blog' },
+          { name: 'keywords', content: 'Sophie T\'s, homepage, tea shop, blog, articles' },
         ]}
       />
       <h1>Gallery</h1>
