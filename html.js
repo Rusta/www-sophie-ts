@@ -32,6 +32,7 @@ const HTML = (props) => {
           name="viewport"
           content="width=device-width, initial-scale=1.0"
         />
+        <link href="https://fonts.googleapis.com/css?family=Mate+SC" rel="stylesheet" />
         {head.title.toComponent()}
         {head.meta.toComponent()}
         {css}

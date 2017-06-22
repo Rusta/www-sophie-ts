@@ -11,7 +11,7 @@ main {
 }
 
 body, input, textarea {
-  font: 14px Georgia, "Bitstream Charter", serif;
+  font-family: 'Mate SC', serif;
 }
 
 h1 { font-size: 2.5rem; }
